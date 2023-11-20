@@ -10,11 +10,32 @@ import { MdEmail, MdCall } from "react-icons/md";
 
 
 const Home = () => {
+
+  const [refreshCount, setRefreshCount] = useState(0);
+
+  // Function to handle automatic refresh
+  const handleRefresh = () => {
+    // Update the state to trigger a re-render
+    setRefreshCount(prevCount => prevCount + 1);
+    // You can perform other actions or state updates here as needed
+  };
+
+  // Set the interval for automatic refresh
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Call the function to handle automatic refresh
+      handleRefresh();
+    }, 5000); // Refresh every 5 seconds (adjust the timing as needed)
+
+    // Clear the interval on component unmount to prevent memory leaks
+    return () => clearInterval(interval);
+  }, []);
+  
   const select = (el, all = false) => {
     el = el.trim()
     if (all) {
       return [...document.querySelectorAll(el)]
-    } else {
+    } else {https://chat.openai.com/
       return document.querySelector(el)
     }
   }
