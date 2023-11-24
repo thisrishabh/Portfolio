@@ -55,7 +55,7 @@ const Contact = () => {
               <div className="info-box">
                 <MdCall className='address-icon' />
                 <h3>Call Me</h3>
-                <p>+19 8112740196</p>
+                <p>+91 8112740196</p>
               </div>
             </div>
           </div>
