@@ -32,14 +32,14 @@ const About = () => {
     <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
       <h3>Software Engineer</h3>
       <p className="fst-italic">
-        BE/BTech graduate with expert command over HTMl, CSS, JavaScript, React, Strapi & MongoDb. Fundamental understanding of bother Front-end and Back-end web development
+        BE/BTech graduate with expert command over HTML, CSS, JavaScript, React, Strapi & MongoDb. Fundamental understanding of both Front-end and Back-end web development
       </p>
       <div className="row">
         <div className="col-lg-6">
           <ul>
             <li> <strong>Birthday:</strong> <span>10 Jan 2002</span></li>
             <li> <strong>Website:</strong> <span>rishabhmaurya0205@gmail.com</span></li>
-            <li> <strong>Phone:</strong> <span>+91 812740196</span></li>
+            <li> <strong>Phone:</strong> <span>+91 8112740196</span></li>
             <li> <strong>City:</strong> <span>Bengaluru, Karnataka</span></li>
           </ul>
         </div>
